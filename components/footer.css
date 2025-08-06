@@ -1,0 +1,162 @@
+.footer {
+  background-color: #111827;
+  color: white;
+}
+
+.footer-content {
+  display: grid;
+  gap: 32px;
+  padding: 48px 0;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.clinic-info .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Updated Logo Styling for Footer */
+.aayu-logo-image-footer {
+  border-radius: 12px; /* Rounded square */
+  object-fit: cover; /* Ensure image covers the area */
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.3), /* Darker shadow for depth */
+    -5px -5px 15px rgba(255, 255, 255, 0.1); /* Lighter shadow for highlight */
+  width: 100px; /* Set a fixed size for consistency */
+  height: 100px; /* Set a fixed size for consistency */
+  filter: brightness(1.2); /* Make it slightly brighter for visibility on dark background */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.aayu-logo-image-footer:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.4),
+    -8px -8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.logo-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white; /* Ensure visibility on dark background */
+  margin: 0;
+}
+
+.logo-text h3 .aayu-color {
+  color: #1a2b4d; /* Changed to navy blue */
+}
+
+.logo-text h3 .clinic-color {
+  color: white; /* Ensure visibility on dark background */
+}
+
+.logo-text p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.clinic-description {
+  color: #9ca3af;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #9ca3af;
+}
+
+.service-list li {
+  margin-bottom: 8px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #9ca3af;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  color: #60a5fa; /* This blue can remain or be adjusted to navy if preferred */
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  padding-top: 32px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #9ca3af;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

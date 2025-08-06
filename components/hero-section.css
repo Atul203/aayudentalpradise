@@ -1,0 +1,196 @@
+.hero-section {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.slide-text {
+  text-align: center;
+  color: white;
+  padding: 0 16px;
+  max-width: 800px;
+}
+
+.slide-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.slide-text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.slide-text p {
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.slide-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Updated styling for the primary button in Hero Section */
+.btn-primary {
+  background-color: #ef4444; /* Red background */
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: pulse-scale 2s infinite ease-in-out; /* Added animation */
+}
+
+.btn-primary:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  padding: 12px 32px;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: #1f2937;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-arrow:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-arrow.prev {
+  left: 16px;
+}
+
+.nav-arrow.next {
+  right: 16px;
+}
+
+.slide-indicators {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.indicator.active {
+  background-color: white;
+  transform: scale(1.25);
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    height: 80vh;
+  }
+
+  .slide-text h1 {
+    font-size: 4rem;
+  }
+
+  .slide-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .slide-buttons {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 640px) {
+  .slide-text h1 {
+    font-size: 2rem;
+  }
+
+  .slide-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .slide-text p {
+    font-size: 1rem;
+  }
+}

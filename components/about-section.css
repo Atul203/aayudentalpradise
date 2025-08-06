@@ -1,0 +1,148 @@
+.about-section {
+  padding: 64px 0;
+  background-color: white;
+}
+
+.about-grid {
+  display: grid;
+  gap: 48px;
+  align-items: center;
+}
+
+.doctor-image-container {
+  position: relative;
+}
+
+.doctor-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.doctor-image {
+  border-radius: 8px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: auto;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  background-color: #1a2b4d; /* Changed to navy blue */
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* Animation added */
+  animation: pulse-scale 2s infinite ease-in-out;
+}
+
+.experience-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.experience-text {
+  font-size: 12px;
+}
+
+.doctor-intro h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a2b4d; /* Default color for the whole text, now navy blue */
+  margin-bottom: 16px;
+}
+
+.doctor-intro h2 .dr-name-black {
+  color: #1a2b4d; /* Changed to navy blue */
+}
+
+.doctor-intro h2 .dr-name-blue {
+  color: #1a2b4d; /* Changed to navy blue for Dr. A.N. */
+}
+
+.doctor-title {
+  font-size: 18px;
+  color: #1a2b4d; /* Changed to navy blue */
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.doctor-description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.experience-highlights {
+  margin-bottom: 32px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.highlight-icon {
+  width: 24px;
+  height: 24px;
+  color: #1a2b4d; /* Changed to navy blue */
+  margin-top: 4px;
+}
+
+.highlight-content h4 {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.highlight-content p {
+  color: #6b7280;
+  margin: 0;
+}
+
+/* New styling for the "Book Appointment" button in About Section */
+.book-appointment-btn {
+  background-color: #ef4444; /* Red background */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: pulse-scale 2s infinite ease-in-out; /* Added animation */
+}
+
+.book-appointment-btn:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
+
+@media (min-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .doctor-intro h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-intro h2 {
+    font-size: 2rem;
+  }
+
+  .experience-badge {
+    bottom: -12px;
+    right: -12px;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,228 @@
+.top-bar {
+  background-color: #1a2b4d; /* Changed to navy blue */
+  color: white;
+  padding: 8px 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-base {
+  width: 16px;
+  height: 16px;
+  color: white; /* Default color for top bar icons */
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+.main-header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Updated Logo Styling */
+.aayu-logo-image {
+  border-radius: 12px; /* Rounded square */
+  object-fit: cover; /* Ensure image covers the area */
+  width: 100px; /* Set a fixed size for consistency */
+  height: 100px; /* Set a fixed size for consistency */
+  /* 3D border effect */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+  box-shadow:
+    5px 5px 15px rgba(0, 0, 0, 0.3), /* Darker shadow for depth */
+    -5px -5px 15px rgba(255, 255, 255, 0.1); /* Lighter shadow for highlight */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.aayu-logo-image:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow:
+    8px 8px 20px rgba(0, 0, 0, 0.4),
+    -8px -8px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  color: #374151;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #1a2b4d; /* Changed to navy blue */
+}
+
+/* Updated Call Us Button Styling */
+.call-us-btn {
+  background-color: #1a2b4d; /* Dark navy blue */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.call-us-btn .icon-base {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.call-us-btn:hover {
+  background-color: #0a192f; /* Darker navy blue on hover */
+  transform: translateY(-2px);
+}
+
+.appointment-btn {
+  background-color: #ef4444; /* Red background */
+  color: white;
+  padding: 8px 24px;
+  border: 2px solid transparent; /* Initial transparent border */
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-out; /* Smoother transition for 3D effect */
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0); /* For 3D effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: pulse-scale 2s infinite ease-in-out; /* Added animation */
+}
+
+.appointment-btn:hover {
+  background-color: #dc2626; /* Darker red on hover */
+  transform: translateY(-3px) scale(1.02); /* Lift and slightly scale up */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25), inset 0 0 0 2px rgba(255, 255, 255, 0.5); /* Deeper shadow + inner white border */
+  border-color: rgba(255, 255, 255, 0.5); /* White border on hover */
+}
+
+.appointment-btn:active {
+  transform: translateY(0) scale(0.98); /* Push down and slightly scale in */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), inset 0 0 0 2px rgba(0, 0, 0, 0.2); /* Flatter shadow + darker inner border on press */
+  border-color: rgba(0, 0, 0, 0.2); /* Darker border on active */
+}
+
+.appointment-btn.mobile {
+  width: fit-content;
+}
+
+.mobile-menu-btn {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu-btn .icon-base {
+  width: 24px;
+  height: 24px;
+  color: #1f2937;
+}
+
+.mobile-nav {
+  padding: 16px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .contact-info {
+    flex-direction: row;
+  }
+
+  .social-links {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .top-bar-content {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

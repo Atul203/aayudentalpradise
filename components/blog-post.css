@@ -1,0 +1,167 @@
+.blog-post-article {
+  padding: 64px 0;
+}
+
+.blog-post-container {
+  max-width: 960px; /* max-w-4xl */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.blog-post-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1a2b4d; /* Changed to navy blue */
+  text-decoration: none;
+  margin-bottom: 32px;
+  transition: color 0.3s;
+}
+
+.blog-post-back-link:hover {
+  color: #0a192f; /* Darker navy blue on hover */
+}
+
+.blog-post-back-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.blog-post-header {
+  margin-bottom: 32px;
+}
+
+.blog-post-badge-container {
+  margin-bottom: 16px;
+}
+
+.blog-post-badge {
+  background-color: #1a2b4d; /* Changed to navy blue */
+  color: white;
+  padding: 4px 12px;
+  border-radius: 9999px; /* full rounded */
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.blog-post-title {
+  font-size: 2.25rem; /* text-3xl md:text-4xl */
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.blog-post-meta-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.blog-post-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-post-meta-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.blog-post-image-container {
+  position: relative;
+  height: 256px; /* h-64 md:h-96 */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .blog-post-image-container {
+    height: 384px; /* md:h-96 */
+  }
+}
+
+.blog-post-image {
+  object-fit: cover;
+}
+
+.blog-post-content {
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.blog-post-content h2 {
+  font-size: 1.75rem; /* h2 */
+  font-weight: bold;
+  color: #1f2937;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.blog-post-content h3 {
+  font-size: 1.5rem; /* h3 */
+  font-weight: bold;
+  color: #1f2937;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.blog-post-content p {
+  margin-bottom: 16px;
+  color: #374151;
+}
+
+.blog-post-content ul {
+  list-style: disc;
+  margin-left: 24px;
+  margin-bottom: 16px;
+  color: #374151;
+}
+
+.blog-post-content ul li {
+  margin-bottom: 8px;
+}
+
+.blog-post-cta {
+  background-color: #eff6ff; /* bg-blue-50 */
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+}
+
+.blog-post-cta-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.blog-post-cta-description {
+  color: #6b7280;
+  margin-bottom: 24px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Updated styling for the CTA button in Blog Post */
+.blog-post-cta-button {
+  background-color: #ef4444; /* Red background */
+  color: white;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  animation: pulse-scale 2s infinite ease-in-out; /* Added animation */
+}
+
+.blog-post-cta-button:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
